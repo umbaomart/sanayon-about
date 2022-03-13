@@ -1,0 +1,31 @@
+@mixin u-mqMin($minW: $windowPC) {
+  @media screen and (min-width: $minW) {
+    @content;
+  }
+}
+
+@mixin u-mqMax($maxW: $contentCenter) {
+  @media screen and (max-width: $maxW) {
+    @content;
+  }
+}
+
+@mixin u-mqMaxMin($maxW: $windowSP, $minW: $contentCenter) {
+  @media screen and (max-width: $maxW) and (min-width: $minW) {
+    @content;
+  }
+}
+
+// print css
+@mixin u-print {
+  @media print {
+    @content;
+  }
+}
+
+// dork mode
+@mixin u-darkmode {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin u-fill($p: absolute, $t: 0, $l: 0, $w: 100%, $h: 100%) {
+  height: $h;
+  left: $l;
+  position: $p;
+  top: $t;
+  width: $w;
+}

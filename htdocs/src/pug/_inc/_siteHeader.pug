@@ -1,0 +1,15 @@
+
+-
+    let main_menu = [
+            {title: "HOME", slug: "home", link: "."},
+            {title: "ABOUT US", slug: "about", link: "about"},
+            {title: "SERVICES", slug: "services", link: "services"},
+            {title: "CONTACT", slug: "contact", link: "contact"}
+        ];
+
+header.siteHeader
+    .siteHeader__inner
+        nav.siteHeader__nav(role='navigation')
+            ul.siteHeader__navList: each item in main_menu
+                li.siteHeader__navItem(class=(item.slug==currentPage ? "is-current" : ''))
+                    a.siteHeader__navItemLink(href=`${relativePath}/`+`${item.link}`)= item.title

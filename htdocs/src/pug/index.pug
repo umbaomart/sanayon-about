@@ -1,0 +1,110 @@
+//- META INFORMATION
+- const page_title = 'Website Name'
+- const relativePath = '.'
+- const meta_title = 'this is meta title'
+- const meta_keywords = 'this is meta keywords'
+- const meta_description = 'this is meta description'
+- const meta_og_url = 'http://website.com'
+- const currentPage = 'home'
+
+
+//- EXTERNAL LIBRARIES
+- const isJquery = true
+- const isWowEffects = false
+- const isSwiper = false
+- const isBootstrap = false
+- const isPolyfill = true
+
+
+//- CONTENT DATA
+-
+    //- Accordions
+    const accordions = [
+        {
+            title: 'Title 1',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.'
+        },
+        {
+            title: 'Title 2',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.'
+        },
+        {
+            title: 'Title 3',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.'
+        },
+    ];
+
+    //- Img bg
+    const about_bg = [
+        {
+            01: 'topKVSlide_01.jpg',
+        },
+
+    ];
+
+    //- Custom select
+    const countries = [
+        { name: 'Australia', value: '0'},
+        { name: 'Philippines', value: '1'},
+        { name: 'Japan', value: '2'},
+        { name: 'Mexico', value: '3'},
+    ];
+
+
+
+doctype html
+html(lang="ja")
+    head
+        //- HEAD
+        include ./_inc/_head.pug
+
+
+    body.topPage#top
+        //- HEADER
+        //- include ./_inc/_siteHeader.pug
+
+        //- MAIN CONTENT
+        main.siteContent(role="main")
+            section.sec01
+                -
+                    const card = [
+                      {
+                        num: '01',
+                        link: '#top',
+                        title: 'h1_01',
+                        text: 'text_01',
+                      },
+                      {
+                        num: '02',
+                        link: '#top',
+                        title: 'h1_02',
+                        text: 'text_02',
+                      },
+                      {
+                        num: '03',
+                        link: '#top',
+                        title: 'h1_03',
+                        text: 'text_03',
+                      },
+                    ]
+                ul.cardList01
+                    each item, index in card
+                        li.cardList01__item
+                            a.cardList01__link(href=`${item.link}`)
+                                figure.cardList01__thumb
+                                    img.cardList01__img(src=`${relativePath}/_assets/images/sample/sample_img-${item.num}.jpg` alt="#")
+                                    figcaption.cardList01__caption
+                                h3.cardList01__title !{item.title}
+                                p.cardList01__desc !{item.text}
+
+            section.sec02
+                ul.cardList02
+                    - for (var x = 0; x < 6; x++)
+                        li.cardList02__item
+                            a.cardList02__link(href="#")
+                                figure.cardList02__thumb
+                                    img.cardList01__img(src=`https://placehold.jp/300x300.png` alt="#")
+                                    figcaption.cardList02__caption Name
+
+        //- FOOTER
+        include ./_inc/_siteFooter.pug

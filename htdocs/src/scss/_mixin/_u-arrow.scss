@@ -1,0 +1,8 @@
+@mixin u-arrow($length: 7px, $thickness: 1px, $color: $black01) {
+  border-bottom: $thickness solid $color;
+  border-right: $thickness solid $color;
+  content: '';
+  display: block;
+  height: $length;
+  width: $length;
+}

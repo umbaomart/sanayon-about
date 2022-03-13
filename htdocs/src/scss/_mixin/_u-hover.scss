@@ -1,0 +1,15 @@
+@mixin u-hover($minW: $windowPC) {
+  @include u-mqMin {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin u-hoverOp($opacity: 0.6) {
+  @include u-mqMin {
+    &:hover {
+      opacity: $opacity;
+    }
+  }
+}

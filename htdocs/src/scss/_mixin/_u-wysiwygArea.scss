@@ -1,0 +1,178 @@
+@mixin u-wysiwygArea {
+  @include u-articleText;
+
+  * + * {
+    margin-top: 1.75em;
+  }
+
+  br + * {
+    margin-top: 0;
+  }
+
+  a {
+    @include u-trsPC;
+    @include u-hoverOp;
+    color: blue;
+    text-decoration: underline;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 1.6;
+    margin-top: 2em;
+  }
+
+  h3 {
+    color: blue;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  h4 {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+      background: blue;
+      content: '';
+      height: 17px;
+      left: 0;
+      position: absolute;
+      top: 3px;
+      width: 17px;
+    }
+  }
+  h5,
+  h6 {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  h1 + h2,
+  h2 + h3,
+  h3 + h4,
+  h4 + h5,
+  h5 + h6 {
+    margin-top: 0.5em;
+  }
+  p {
+    @include u-articleText;
+  }
+  strong,
+  strong * {
+    font-weight: bold;
+  }
+  em,
+  em * {
+    font-style: italic;
+  }
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  ul,
+  ol {
+    margin-top: 1em;
+    padding-left: 1.4em;
+
+    li {
+      line-height: 1.5;
+      margin-top: 0.6em;
+    }
+  }
+  sup,
+  sub {
+    font-size: 1rem;
+    line-height: 1 !important;
+  }
+  hr {
+    background: $black;
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  blockquote {
+    background: blue;
+    padding: 30px;
+  }
+  table {
+    background: blue;
+    border-collapse: collapse;
+    height: auto !important;
+    margin-top: 3em;
+    width: 100% !important;
+
+    thead {
+      th,
+      td {
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+
+    tr {
+      th,
+      td {
+        border: $black 1px solid;
+        line-height: 1.5;
+        padding: 15px 20px;
+        text-align: left;
+        vertical-align: middle;
+      }
+
+      th {
+        font-weight: bold;
+        text-align: center;
+        width: 25%;
+      }
+    }
+  }
+
+  img {
+    height: auto;
+    margin-top: 1em;
+    max-width: 100%;
+    width: auto;
+
+    &.aligncenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &.alignright {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  .gallery {
+    @include u-flex($jc: space-between);
+  }
+
+  .gallery-item {
+    float: none;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .gallery-columns-2 .gallery-item {
+    width: calc((100% - 40px) / 2);
+  }
+  .gallery-columns-3 .gallery-item {
+    width: calc((100% - (40px * 2)) / 3);
+  }
+}
+
+.u-wysiwygArea {
+  @include u-wysiwygArea;
+}

@@ -1,0 +1,39 @@
+//- META INFORMATION
+- const page_title = 'About US'
+- const relativePath = '..'
+- const meta_title = 'this is meta title'
+- const meta_keywords = 'this is meta keyworks'
+- const meta_description = 'this is meta description'
+- const meta_og_url = 'http://website.com/about/'
+- const currentPage = 'about'
+
+
+//- EXTERNAL LIBRARIES
+- const isJquery = true
+- const isWowEffects = false
+- const isSwiper = false
+- const isBootstrap = false
+
+
+doctype html
+html(lang="ja")
+    head
+        //- HEAD
+        include ../_inc/_head.pug
+    |
+    |
+    body.topPage
+        //- HEADER
+        include ../_inc/_siteHeader.pug
+        |
+        |
+
+        //- MAIN CONTENT
+        main.siteContent(role="main")
+
+
+
+        //- FOOTER
+        include ../_inc/_siteFooter.pug
+        |
+        |

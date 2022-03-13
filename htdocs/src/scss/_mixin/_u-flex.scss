@@ -1,0 +1,7 @@
+@mixin u-flex($fd: row, $fw: nowrap, $jc: flex-start, $ai: stretch) {
+  align-items: $ai;
+  display: flex;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+  justify-content: $jc;
+}

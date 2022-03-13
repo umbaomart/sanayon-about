@@ -1,0 +1,24 @@
+@mixin u-contentCenter($widthPC: $contentCenter, $paddingLR-PC: 20px, $paddingLR-SP: 15px) {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $paddingLR-PC;
+  padding-right: $paddingLR-PC;
+  width: $widthPC;
+
+  // Liquid
+  @include u-mqMax() {
+
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+    padding-left: $paddingLR-SP;
+    padding-right: $paddingLR-SP;
+    width: 100%;
+  }
+
+  // print
+  @include u-print {
+    width: $widthPrintPC;
+  }
+}

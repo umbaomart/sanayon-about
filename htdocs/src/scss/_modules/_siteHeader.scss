@@ -1,0 +1,27 @@
+/*====================================================================
+siteHeader
+====================================================================*/
+.siteHeader {
+  background: tomato;
+  box-shadow: 1px 1px 6px 4px rgba($black, 0.04);
+  height: $headerHeightPC;
+  left: 0;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  .is_login_user & {
+    top: $wpAdminBarPC;
+  }
+  // headerの上部固定の時に、ページごとにリピートされないように
+  @include u-print {
+    position: absolute;
+  }
+
+  &__innerArea {
+    @include u-contentCenter($widthPC: $contentCenter, $paddingLR-PC: 15px, $paddingLR-SP: 15px);
+    @include u-flex($jc: space-between, $ai: center);
+  }
+}

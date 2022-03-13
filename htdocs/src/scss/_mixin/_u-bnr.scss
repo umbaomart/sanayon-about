@@ -1,0 +1,28 @@
+@mixin u-bnr($bgColor: $black, $textColor: $white) {
+  @include u-trsPC;
+  background: $bgColor;
+  border: 2px solid $bgColor;
+  border-radius: 4px;
+  color: $textColor;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+
+  @include u-hover {
+    background: $textColor;
+    color: $bgColor;
+  }
+
+  // Liquid
+  @include u-mqMax() {
+
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+    font-size: 16px;
+  }
+}

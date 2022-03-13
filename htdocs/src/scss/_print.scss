@@ -1,0 +1,26 @@
+/*====================================================================
+PRINT LAYOUT
+====================================================================*/
+@page {
+  // 印刷時にA4サイズ
+  size: A4 portrait; /* 横の場合はlandscape */
+  margin: 0mm;
+}
+@include u-print {
+  body {
+    // CSSで指定した背景色を表示（Chromeのみ）
+    -webkit-print-color-adjust: exact;
+    // 英語などの文字がコンテンツからはみ出す場合
+    word-break: break-all!important;
+  }
+  // ページを強制的に分割したい時に使う
+  .u-printPages__next {
+    size: A4 landscape;
+    page-break-before: always;
+  }
+  // コンテンツの途中で次のページに行くとき
+  .u-printPages__box {
+    break-inside: avoid;
+  }
+
+}

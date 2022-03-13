@@ -1,0 +1,14 @@
+//- pugでGAタグをそのまま挿入するとhtmlタグに変換されてしまい機能しなくなるので注意。
+
+//- 下記の記述は2021年10月時点のものなので、変更があった場合は逐一更新してください。
+
+//- [XX-000000000-0]の部分を書き換え、includeして使用してください。
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+script(async='' src="https://www.googletagmanager.com/gtag/js?id=XX-000000000-0")
+script.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'XX-000000000-0');

@@ -1,0 +1,20 @@
+@mixin u-IEhack {
+  @media all and (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+@mixin u-Edgehack {
+  @supports (-ms-ime-align: auto) {
+    @content;
+  }
+}
+
+// Safari
+@mixin u-safariHack {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @at-root _::-webkit-full-page-media, _:future, :root & {
+      @content;
+    }
+  }
+}

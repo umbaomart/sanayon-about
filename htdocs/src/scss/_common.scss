@@ -1,0 +1,110 @@
+/*====================================================================
+COMMON LAYOUT
+====================================================================*/
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  // Liquid
+  @include u-mqMax() {
+
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+    font-size: calc(10vw / 3.75);
+  }
+}
+body {
+  @include fontFeature;
+  -webkit-print-color-adjust: exact;
+
+  // Liquid
+  @include u-mqMax() {
+
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+
+  }
+}
+
+/*-----------------------------------------------
+PC/SP
+------------------------------------------------*/
+// PC
+.u-pcDb {
+  display: block;
+}
+.u-pcDib {
+  display: inline-block;
+}
+.u-pcDin {
+  display: inline;
+}
+.u-pcDf {
+  display: flex;
+}
+.u-pcDt {
+  display: table;
+}
+.u-pcDtc {
+  display: table-cell;
+}
+
+.u-spDb,
+.u-spDib,
+.u-spDin,
+.u-spDf,
+.u-spDt,
+.u-spDtc {
+  display: none;
+}
+
+// SP
+@include u-mqMax($maxW: $windowSP) {
+  .u-pcDb,
+  .u-pcDib,
+  .u-pcDin,
+  .u-pcDf,
+  .u-pcDt,
+  .u-pcDtc {
+    display: none;
+  }
+
+  .u-spDb {
+    display: block;
+  }
+  .u-spDib {
+    display: inline-block;
+  }
+  .u-spDin {
+    display: inline;
+  }
+  .u-spDf {
+    display: flex;
+  }
+  .u-spDt {
+    display: table;
+  }
+  .u-spDtc {
+    display: table-cell;
+  }
+}
+
+/*-----------------------------------------------
+main
+------------------------------------------------*/
+.siteContent {
+  min-height: calc(100vh - #{$headerHeightPC + $headerHeightPC});
+  padding-top: $headerHeightPC;
+
+  .is_login_user & {
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+    min-height: calc(100vh - #{$footerHeightSP});
+    padding-top: $headerHeightSP;
+  }
+}

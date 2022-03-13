@@ -1,0 +1,3 @@
+@function u-em($num) {
+    @return (1em * $num / 1000);
+}

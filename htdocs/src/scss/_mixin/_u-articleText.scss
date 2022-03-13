@@ -1,0 +1,16 @@
+@mixin u-articleText($color: $white) {
+  color: $color;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+
+  // Liquid
+  @include u-mqMax() {
+
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+    font-size: 12px;
+  }
+}

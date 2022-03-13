@@ -1,0 +1,17 @@
+@mixin u-secTitle($color: $black) {
+  border-bottom: 2px solid $color;
+  color: $color;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+
+  // Liquid
+  @include u-mqMax() {
+
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP){
+    font-size: 16px;
+  }
+}
