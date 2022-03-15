@@ -1,37 +1,4 @@
-# Project Details
----
 
-```
-	Project Name: Pug/SCSS Template
-	Date Commence: 2020
-	Repository URL: https://bitbucket.org/commude_git/pug-scss-template/src
-	Specifications URL(if any): -N/A-
-```
-
-
-# Table of Content:
----
-1. [COMMUDE Coding rules](#markdown-header-commude-coding-rule)
-2. [Prerequisites](#markdown-header-prerequisites)
-2. [Using the template](#markdown-header-using-the-template)
-2. [Setup development environment ](#markdown-header-setup-development-environment)
-3. [Project tree Structure](#markdown-header-project-directory-structure)
-4. [Wiki](https://bitbucket.org/commude_git/pug-scss-template/wiki/Home)
-5. [Htaccess template](https://bitbucket.org/commude_git/htaccess-template/src/master/)
-6. [VS Code template](https://bitbucket.org/commude_git/vscode-setting-template/src/master/htdocs/)
-7. [SSH Setup](https://docs.google.com/document/d/1KCsmc6oLRxhI5zXAZwvHGFqZHk9TiI6IN2xnuFFj680/edit?usp=drive_web&ouid=105749486430863183626)
-8. [PUG Usage](https://drive.google.com/drive/folders/1HWlaviU35Z1cK7Uz81VbUE4rZjJCPAKy)
-
-## COMMUDE Coding Rule
----
-- [JP Ver](https://docs.google.com/document/d/1iwIVulnExD6ralOuJVCeMc6twYXE1ZDmJ-tVXGuEOhk/edit#heading=h.epwlr8b4jlog)
-- [EN Ver](https://docs.google.com/document/d/1iGk5EpJaRu53UnIKUc22_a2fAK-XWS2qizcdGikiMHE/edit#heading=h.epwlr8b4jlog)
-
-## Prerequisites
----
-* SSH key should be registered to Bitbucket account
-
-## Using the template
 ---
 * All assets/images/files should be placed inside the src folder only.
 * All files in DIST is automatically deleted/cleared upon running npm run:watch all
