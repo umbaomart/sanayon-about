@@ -5,8 +5,8 @@ html {
   font-size: 62.5%; // 1rem = 10px
 
   // Liquid
-  @include u-mqMax() {
-
+  @include u-mqMax(1200px) {
+    font-size: calc(10vw / 12.5);
   }
 
   // SP
@@ -14,19 +14,16 @@ html {
     font-size: calc(10vw / 3.75);
   }
 }
+
 body {
   @include fontFeature;
   -webkit-print-color-adjust: exact;
 
   // Liquid
-  @include u-mqMax() {
-
-  }
+  @include u-mqMax() {}
 
   // SP
-  @include u-mqMax($maxW: $windowSP) {
-
-  }
+  @include u-mqMax($maxW: $windowSP) {}
 }
 
 /*-----------------------------------------------
@@ -36,18 +33,23 @@ PC/SP
 .u-pcDb {
   display: block;
 }
+
 .u-pcDib {
   display: inline-block;
 }
+
 .u-pcDin {
   display: inline;
 }
+
 .u-pcDf {
   display: flex;
 }
+
 .u-pcDt {
   display: table;
 }
+
 .u-pcDtc {
   display: table-cell;
 }
@@ -63,6 +65,7 @@ PC/SP
 
 // SP
 @include u-mqMax($maxW: $windowSP) {
+
   .u-pcDb,
   .u-pcDib,
   .u-pcDin,
@@ -75,18 +78,23 @@ PC/SP
   .u-spDb {
     display: block;
   }
+
   .u-spDib {
     display: inline-block;
   }
+
   .u-spDin {
     display: inline;
   }
+
   .u-spDf {
     display: flex;
   }
+
   .u-spDt {
     display: table;
   }
+
   .u-spDtc {
     display: table-cell;
   }
@@ -96,15 +104,14 @@ PC/SP
 main
 ------------------------------------------------*/
 .siteContent {
-  min-height: calc(100vh - #{$headerHeightPC + $headerHeightPC});
-  padding-top: $headerHeightPC;
+  // min-height: calc(100vh - #{$headerHeightPC + $headerHeightPC});
+  // padding-top: $headerHeightPC;
 
-  .is_login_user & {
-  }
+  .is_login_user & {}
 
   // SP
   @include u-mqMax($maxW: $windowSP) {
-    min-height: calc(100vh - #{$footerHeightSP});
-    padding-top: $headerHeightSP;
+    // min-height: calc(100vh - #{$footerHeightSP});
+    // padding-top: $headerHeightSP;
   }
 }

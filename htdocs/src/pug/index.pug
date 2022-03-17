@@ -1,6 +1,7 @@
 //- META INFORMATION
 - const page_title = 'Website Name'
 - const relativePath = '.'
+- const imgPath = './../_assets/images/about/'
 - const meta_title = 'this is meta title'
 - const meta_keywords = 'this is meta keywords'
 - const meta_description = 'this is meta description'
@@ -18,38 +19,138 @@
 
 //- CONTENT DATA
 -
-    //- Accordions
-    const accordions = [
+    //- about content
+    const about = [
         {
-            title: 'Title 1',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.'
+            "hero" : [
+                {
+                title: "Hey, we're glad to have you here!",
+                "content": [
+                    {
+                    list: "Our purpose is to connect your business and search for the best finds from our local communities.",
+                    list2: "Sanayon is an online marketplace that cater services for the people by providing locally produced products from small-medium businesses. It aims to build an online community by linking buyers directly to local producers. The app allows shoppers especially from Rinconada Areas to purchase their daily needs, hassle-free."
+                    },
+                ]
+                }
+            ]
         },
         {
-            title: 'Title 2',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.'
+            "section01": [
+                {
+                    title: "How Sanayon started",
+                    content: [
+                        {
+                            list: "Sanayon at first was just a 'what if' from the 'need to do' project of the owners as senior level students with Bachelor of Science in Entrepreneurship. The project was intended to be a practice for them as future entrepreneurs. At such, when they thought about how business and community should compliment each other in achieving collective goals, the young and perceptive owners concluded with the concept of Sanayon. The owners were able to apply their individual skills to create the concept from the ground up. More so, share awareness to their advocacies such as sustainable livelihood and responsible exchange."
+                        }
+                    ]
+                }
+            ]
         },
         {
-            title: 'Title 3',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.'
+            "section02": [
+                {
+                    title: "The future we look out for with you",
+                    content: [
+                        {
+                            list: "We wanted to visualize a progressive and harmonious trading environment within our local communities through this venture. Our vision is to be a top-tier online marketplace in Rinconada which boosts the local economy and its communities, through patronizing locally produced products."
+                        }
+                    ]
+                },
+                {
+                    title2: "A goal is accomplished by linking pieces of actions together, <br>and we are here to do the work",
+                    content2: [
+                        {
+                            list2: "We want to execute our creativity and enthusiasm as youths of this generation by curating a path for other people, starting from our engagement in projects like this. Our mission is by integrating technology with viable solutions to boost the local economy and achieve sustainability, by providing a market of cost-effective, ecological and local-made products; extensive opportunities for startups and small enterprises; and viable labor potentials for the local community."
+                        }
+                    ]
+                },
+            ]
+        },
+        {
+            "section03": [
+                {
+                    title: "Our core values",
+                    cards: [
+                        {
+                            title: "Integrity",
+                            desc: "We commit to serve with honesty and fairness in all our actions. As we believe, being true to everything that we do willbring about the good karma."
+                        },
+                        {
+                            title: "Safety & Security",
+                            desc: "Providing a safe and secure environment within our community is at the forefront of all our decision-making. We ensure that shared information are safely stored and being utilized with the best of intentions."
+                        },
+                        {
+                            title: "Quality Service",
+                            desc: "You are the fuel that motivate us to do better. So, that is why we adhere to giving the best of efforts to serve you in every relevant situation in this community."
+                        },
+                        {
+                            title: "Collaboration",
+                            desc: "We believe in the power of working together and building good relationships with our partners and customers. It is by meeting new people and learning from them that compliments our strengths and weaknesses."
+                        },
+                        {
+                            title: "Innovation",
+                            desc: "Adapting to change and encouraging to create change is one of the purpose of why we're here for. We want to inspire others to take the leap in making the world a better place through innovation and technology."
+                        },
+                    ]
+                },
+            ]
+        },
+        {
+            "section04": [
+                {
+                    title : "Finally, meet the team!",
+                    persons : [
+                        {
+                            name: "Shaina Barcela, Founder",
+                            desc: "Sanayon is a special shot for me as a young entrepreneur and a person who has quirks for learning new things. It was a challenge creating the whole idea from the get-go, but I can say now that it's worth it. I hope you continuously support our venture and advocacies, and let's each do our best to lift up our own communities. Mabalos po!"
+                        },
+                        {
+                            name: "Justin Joy De Los Poyos, Co-founder",
+                            desc: "Developing this concept was never been easy as you need patience, courage and hard work to keep you going. We hope that by using this platform, everyone will be encouraged to support local produce in order to strengthen the economy and to gain market share in the growing online communities. Our goal is to support them, reclaim customers, and recover from the pandemic's effects. So we took the risk because if no one will try, who will be? "
+                        },
+                        {
+                            name: "Lenore Cruzata",
+                            desc: "The arouse of Sanayon Web App has gone through many difficult paths and long processes before it finally operates. Yet we still push it through and made it possible and accessible for everyone because we strongly believe in its purpose. It is formed with the urge of uplifting small businesses and producers of local products from nearby places to reach a wider scope of customers with the use of the mobile platform for a more convenient and hassle-free transaction, especially in the time of the pandemic."
+                        },
+                        {
+                            name: "Wavhen Bayta",
+                            desc: "It's been tough for every business owner when the pandemic arises, and we want to do something that will help and support local businesses. That's why we've come up with this idea and decided to create SANAYON as our platform. Through this, we made it easier for everyone to purchase their needs in the most convenient form."
+                        },
+                        {
+                            name: "John Paul Sañano",
+                            desc: "We are looking forward that through Sanayon we can open doors for local products to be showcase in e-commerce to further heightened their productions and enable our customers to patronize  our very own      crafted goods. In Sanayon we believe that by supporting  Filipino/local products means supporting yourself too and helping others to achieve their goals in creating more jobs for Filipinos, especially those in need."
+                        }
+                    ]
+                }
+            ]
         },
     ];
 
-    //- Img bg
-    const about_bg = [
+    const img = [
         {
-            01: 'topKVSlide_01.jpg',
-        },
-
-    ];
-
-    //- Custom select
-    const countries = [
-        { name: 'Australia', value: '0'},
-        { name: 'Philippines', value: '1'},
-        { name: 'Japan', value: '2'},
-        { name: 'Mexico', value: '3'},
-    ];
-
+            bg_01 : "about_bg01.png",
+            bg_02 : "about_bg02.png",
+            bg_03 : "about_bg03.png",
+            bg_04 : "about_bg04.png",
+            bg_05 : "about_bg05.png",
+            bg_06 : "about_bg06.png",
+            bg_07 : "about_bg07.png",
+            bg_08 : "about_bg08.png",
+            bg_09 : "about_bg09.png",
+            bg_10 : "about_bg10.png",
+            bg_11 : "about_bg11.png",
+            bg_12 : "about_bg12.png",
+            kv_01 : "about_kv01.png",
+            kv_02 : "about_kv02.png",
+            kv_03 : "about_kv03.png",
+            kv_04 : "about_kv04.png",
+            kv_05 : "about_kv05.png",
+            kv_06 : "about_kv06.png",
+            kv_07 : "about_kv07.png",
+            kv_08 : "about_kv08.png",
+            logo : "logo.jpg"
+        }
+    ]
 
 
 doctype html
@@ -60,51 +161,171 @@ html(lang="ja")
 
 
     body.topPage#top
-        //- HEADER
-        //- include ./_inc/_siteHeader.pug
 
         //- MAIN CONTENT
         main.siteContent(role="main")
+
             section.sec01
-                -
-                    const card = [
-                      {
-                        num: '01',
-                        link: '#top',
-                        title: 'h1_01',
-                        text: 'text_01',
-                      },
-                      {
-                        num: '02',
-                        link: '#top',
-                        title: 'h1_02',
-                        text: 'text_02',
-                      },
-                      {
-                        num: '03',
-                        link: '#top',
-                        title: 'h1_03',
-                        text: 'text_03',
-                      },
-                    ]
-                ul.cardList01
-                    each item, index in card
-                        li.cardList01__item
-                            a.cardList01__link(href=`${item.link}`)
-                                figure.cardList01__thumb
-                                    img.cardList01__img(src=`${relativePath}/_assets/images/sample/sample_img-${item.num}.jpg` alt="#")
-                                    figcaption.cardList01__caption
-                                h3.cardList01__title !{item.title}
-                                p.cardList01__desc !{item.text}
+                .heroArea
+                    .heroArea__inner
+                        .about__bg01
+                            img(src=`${imgPath}${img[0].bg_01}`, alt="")
+                        .about__bg02
+                            img(src=`${imgPath}${img[0].bg_02}`, alt="")
+                        .logo
+                            img(src=`${imgPath}${img[0].logo}`, alt="")
+                        .heroArea__wrapper
+                            .heroArea__person
+                                img(src=`${imgPath}${img[0].kv_01}`, alt="")
+                            .heroArea__content
+                                .heroArea__title
+                                    h1.heroArea__titleText=about[0].hero[0].title
+                                .heroArea__desc
+                                    p.paragraphText=about[0].hero[0].content[0].list
+                                    p.paragraphText=about[0].hero[0].content[0].list2
+                .sec01__inner
+                    .about__bg03
+                        img(src=`${imgPath}${img[0].bg_03}`, alt="")
+                    .about__bg04
+                        img(src=`${imgPath}${img[0].bg_04}`, alt="")
+                    .sec01__content
+                        .sec01__title
+                            h3.sec01__titleText=about[1].section01[0].title.toUpperCase()
+                        .sec01__desc
+                            p.paragraphText=about[1].section01[0].content[0].list
 
             section.sec02
-                ul.cardList02
-                    - for (var x = 0; x < 6; x++)
-                        li.cardList02__item
-                            a.cardList02__link(href="#")
-                                figure.cardList02__thumb
-                                    img.cardList01__img(src=`https://placehold.jp/300x300.png` alt="#")
-                                    figcaption.cardList02__caption Name
+                .about__bg05
+                    img(src=`${imgPath}${img[0].bg_05}`, alt="")
+                .sec02__inner
+                    .sec02__content
+                        .sec02__content01
+                            .sec02__content01Kv
+                                img(src=`${imgPath}${img[0].kv_02}`, alt="")
+                            .sec02__content01Wrapper
+                                .sec02__title
+                                    h3.sec02__titleText=about[2].section02[0].title
+                                .sec02__desc
+                                    p.paragraphText=about[2].section02[0].content[0].list
+
+                        .sec02__content02
+                            .sec02__content02Kv
+                                img(src=`${imgPath}${img[0].kv_03}`, alt="")
+                            .sec02__content02Wrapper
+                                .sec02__title
+                                    h3.sec02__titleText!=about[2].section02[1].title2
+                                .sec02__desc
+                                    p.paragraphText=about[2].section02[1].content2[0].list2
+
+            section.sec03
+                .about__bg06
+                    img(src=`${imgPath}${img[0].bg_06}`, alt="")
+                .about__bg07
+                    img(src=`${imgPath}${img[0].bg_07}`, alt="")
+                //- .about__bg08
+                //-     img(src=`${imgPath}${img[0].bg_08}`, alt="")
+                .sec03__inner
+                    h2.sec03__title=about[3].section03[0].title.toUpperCase()
+                    .cards
+                        .cardsInner
+                            .cardsInnerFlex
+                                .cardsItem
+                                    .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_04}`, alt="")
+                                    .cardsItemContent
+                                        .cardsItemContentTitle
+                                            h3.cardsItemTitleText=about[3].section03[0].cards[0].title
+                                        .cardsItemContentDesc
+                                            p.cardsItemDescText=about[3].section03[0].cards[0].desc
+                                .cardsItem
+                                    .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_05}`, alt="")
+                                    .cardsItemContent
+                                        .cardsItemContentTitle
+                                            h3.cardsItemTitleText=about[3].section03[0].cards[1].title
+                                        .cardsItemContentDesc
+                                            p.cardsItemDescText=about[3].section03[0].cards[1].desc
+                                .cardsItem
+                                    .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_06}`, alt="")
+                                    .cardsItemContent
+                                        .cardsItemContentTitle
+                                            h3.cardsItemTitleText=about[3].section03[0].cards[2].title
+                                        .cardsItemContentDesc
+                                            p.cardsItemDescText=about[3].section03[0].cards[2].desc
+                            .cardsInnerFlex02
+                                .cardsItem
+                                    .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_07}`, alt="")
+                                    .cardsItemContent
+                                        .cardsItemContentTitle
+                                            h3.cardsItemTitleText=about[3].section03[0].cards[3].title
+                                        .cardsItemContentDesc
+                                            p.cardsItemDescText=about[3].section03[0].cards[3].desc
+                                .cardsItem
+                                    .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_08}`, alt="")
+                                    .cardsItemContent
+                                        .cardsItemContentTitle
+                                            h3.cardsItemTitleText=about[3].section03[0].cards[4].title
+                                        .cardsItemContentDesc
+                                            p.cardsItemDescText=about[3].section03[0].cards[4].desc
+
+            section.sec04
+                .about__bg09
+                    img(src=`${imgPath}${img[0].bg_09}`, alt="")
+                .about__bg10
+                    img(src=`${imgPath}${img[0].bg_10}`, alt="")
+                .about__bg11
+                    img(src=`${imgPath}${img[0].bg_11}`, alt="")
+                .about__bg12
+                    img(src=`${imgPath}${img[0].bg_12}`, alt="")
+                .sec04__inner
+                    h2.sec04__title=about[4].section04[0].title
+                    .cards
+                        .cards__flex
+                            .cardsItem
+                                .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_01}`, alt="")
+                                .cardsItemContent
+                                    .cardsItemContentTitle
+                                        h3.cardsItemTitleText=about[4].section04[0].persons[0].name
+                                    .cardsItemContentDesc
+                                        p.cardsItemDescText=about[4].section04[0].persons[0].desc
+                            .cardsItem
+                                .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_01}`, alt="")
+                                .cardsItemContent
+                                    .cardsItemContentTitle
+                                        h3.cardsItemTitleText=about[4].section04[0].persons[1].name
+                                    .cardsItemContentDesc
+                                        p.cardsItemDescText=about[4].section04[0].persons[1].desc
+                        .cards__flex02
+                            .cardsItem
+                                .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_01}`, alt="")
+                                .cardsItemContent
+                                    .cardsItemContentTitle
+                                        h3.cardsItemTitleText=about[4].section04[0].persons[2].name
+                                    .cardsItemContentDesc
+                                        p.cardsItemDescText=about[4].section04[0].persons[2].desc
+                            .cardsItem
+                                .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_01}`, alt="")
+                                .cardsItemContent
+                                    .cardsItemContentTitle
+                                        h3.cardsItemTitleText=about[4].section04[0].persons[3].name
+                                    .cardsItemContentDesc
+                                        p.cardsItemDescText=about[4].section04[0].persons[3].desc
+                            .cardsItem
+                                .cardsItemKv
+                                        img(src=`${imgPath}${img[0].kv_01}`, alt="")
+                                .cardsItemContent
+                                    .cardsItemContentTitle
+                                        h3.cardsItemTitleText=about[4].section04[0].persons[4].name
+                                    .cardsItemContentDesc
+                                        p.cardsItemDescText=about[4].section04[0].persons[4].desc
+
 
         //- FOOTER
-        include ./_inc/_siteFooter.pug
+        //- include ./_inc/_siteFooter.pug
