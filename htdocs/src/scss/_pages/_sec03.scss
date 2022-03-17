@@ -144,6 +144,14 @@
 
 .cardsItemContent {
   flex: 1;
+
+  .sec03 & {
+    margin-left: 2rem;
+
+    @include u-mqMax {
+      margin-left: 0;
+    }
+  }
 }
 
 .cardsItemContentTitle {

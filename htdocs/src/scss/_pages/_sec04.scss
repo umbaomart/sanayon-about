@@ -66,6 +66,7 @@
   width: 100%;
   max-width: 130rem;
   position: relative;
+  margin: 0 auto;
 
   @include u-mqMax {
     padding: 5rem 1.5rem;
