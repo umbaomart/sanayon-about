@@ -1,0 +1,178 @@
+.sec03 {
+  width: 100%;
+  position: relative;
+  padding: 10rem 1.5rem;
+
+  @include u-mqMax(1300px) {
+    font-size: calc(10vw / 13);
+  }
+
+  @include u-mqMax {
+    padding: 5rem 1.5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+.about__bg06 {
+  width: 17rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+
+  @include u-mqMax {
+    width: 15rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.about__bg07 {
+  position: absolute;
+  right: 0;
+  bottom: -40%;
+  z-index: -2;
+
+  @include u-mqMax {
+    bottom: 5%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.about__bg08 {}
+
+.sec03__inner {
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.sec03__title {
+  font-size: 3rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  color: $brown;
+
+  @include u-mqMax {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.cards {}
+
+.cardsInner {}
+
+.cardsInnerFlex {
+  @include u-flex($fd: row, $fw: nowrap, $jc: flex-start, $ai: stretch);
+
+  @include u-mqMax {
+    display: block;
+  }
+
+  .cardsItem {
+    &:not(last-child) {
+      margin-right: 3rem;
+
+      @include u-mqMax {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.cardsInnerFlex02 {
+  @include u-flex($fd: row, $fw: nowrap, $jc: center, $ai: stretch);
+  margin-top: 5rem;
+
+  @include u-mqMax {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .cardsItem {
+    &:not(last-child) {
+      margin-right: 3rem;
+
+      @include u-mqMax {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.cardsItem {
+  @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: stretch);
+  width: 33%;
+
+  @include u-mqMax {
+    width: 100%;
+    display: block;
+
+    &:not(:first-child) {
+      margin-top: 3.5rem;
+    }
+  }
+}
+
+.cardsItemKv {
+  width: 15rem;
+
+  @include u-mqMax {
+    margin: 0 auto 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.cardsItemContent {
+  flex: 1;
+}
+
+.cardsItemContentTitle {
+  margin-bottom: 4rem;
+
+  @include u-mqMax {
+    margin-bottom: 1rem;
+  }
+}
+
+.cardsItemTitleText {
+  font-size: 2.5rem;
+  color: $brown;
+
+  @include u-mqMax {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.cardsItemContentDesc {}
+
+.cardsItemDescText {
+  font-size: 1.6rem;
+  color: $brown;
+  text-align: justify;
+
+  @include u-mqMax {
+    font-size: 1.5rem;
+  }
+}

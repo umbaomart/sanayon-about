@@ -1,0 +1,254 @@
+/*====================================================================
+topPageFvSec
+====================================================================*/
+section.sec01 {}
+
+.heroArea {
+  // background: url('./../images/about/about_bg01.png') center center no-repeat;
+  // background-size: cover;
+  position: relative;
+  width: 100%;
+
+  @include u-mqMax {
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #FEE304;
+      z-index: -3;
+    }
+  }
+}
+
+.heroArea__inner {}
+
+.about__bg01 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+
+  @include u-mqMax {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.about__bg02 {
+  width: 50%;
+  max-width: 56rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -3;
+
+  @include u-mqMax {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.logo {
+  width: 12rem;
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  z-index: -2;
+
+  @include u-mqMax {
+    width: 8rem;
+    top: 1%;
+    right: 1%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.heroArea__wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 10rem;
+
+  @include u-flex($fd: row, $fw: nowrap, $jc: center, $ai: stretch);
+
+  @include u-mqMax {
+    display: block;
+    padding: 5rem 1.5rem;
+  }
+}
+
+.heroArea__person {
+  width: 30rem;
+
+  @include u-mqMax {
+    width: 15rem;
+    // margin: 0 auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.heroArea__content {
+  margin-left: 2rem;
+  flex: 1;
+
+  @include u-mqMax {
+    margin-left: 0;
+  }
+}
+
+.heroArea__title {
+  margin-bottom: 4rem;
+
+  @include u-mqMax {
+    margin: 2rem 0;
+  }
+}
+
+.heroArea__titleText {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: $dscript;
+  position: relative;
+  left: -3%;
+  color: $brown;
+
+  @include u-mqMax {
+    left: 0;
+    font-size: 2.8rem;
+  }
+}
+
+.heroArea__desc {
+  width: 80%;
+
+  @include u-mqMax {
+    width: 100%;
+  }
+
+  .paragraphText {
+    font-size: 2rem;
+
+    @include u-mqMax {
+      font-size: 1.6rem;
+    }
+
+    &:last-child {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.paragraphText {
+  font-family: $Roboto;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: $brown;
+
+  @include u-mqMax {
+    font-size: 1.6rem;
+  }
+}
+
+.sec01__inner {
+  width: 100%;
+  position: relative;
+}
+
+.about__bg03 {
+  width: 14rem;
+  position: absolute;
+  left: 0;
+  top: -20%;
+  z-index: -1;
+
+  @include u-mqMax {
+    width: 8rem;
+    top: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.about__bg04 {
+  width: 30rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+
+  @include u-mqMax {
+    width: 20rem;
+    top: auto;
+    bottom: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.sec01__content {
+  width: 100%;
+  max-width: 1200px;
+  // margin: 10rem auto 0;
+  margin: 10rem auto 0;
+  padding: 6rem 5rem;
+  background: rgba(255, 255, 255, .8);
+
+  @include u-mqMax(1400px) {
+    width: 77%;
+  }
+
+  @include u-mqMax {
+    width: 100%;
+    margin: 0;
+    padding: 5rem 1.5rem 0;
+    background: rgba(255, 255, 255, .5);
+  }
+}
+
+.sec01__title {}
+
+.sec01__titleText {
+  font-size: 3rem;
+  font-family: bold;
+  padding-bottom: 3rem;
+  color: $brown;
+
+  @include u-mqMax {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.sec01__desc {
+  // margin-right: 10rem;
+
+  @include u-mqMax(1200px) {
+    margin-right: 15%;
+  }
+
+  @include u-mqMax {
+    margin-right: 0;
+  }
+}
