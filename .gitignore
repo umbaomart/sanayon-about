@@ -1,5 +1,6 @@
 .DS_Store
+.vscode
+.idea
 node_modules
 htdocs/node_modules
 htdocs/dist/_inc/
-.DS_Store
